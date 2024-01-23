@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>WebSDK Embedded CDN demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://source.zoom.us/3.1.2/lib/vendor/react.min.js"></script>
+    <script src="https://source.zoom.us/3.1.2/lib/vendor/react-dom.min.js"></script>
+    <script src="https://source.zoom.us/3.1.2/zoom-meeting-embedded-3.1.2.min.js"></script>
+    <script src="./tools/tool.js"></script>
+    <script src="./tools/vconsole.min.js"></script>
+    <script src="./tools/token-tool.js"></script>
+    <script src="./tools/cdn.js"></script>
+    <style>
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        #ZoomEmbeddedApp {
+            position: absolute;
+            background: orange;
+            min-height: 1rem;
+            min-width: 1rem;
+            top: 15px;
+            left: 15px;
+        }
+
+        #ZoomChat {
+            background: rebeccapurple;
+            height: 1rem;
+            width: 1rem;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+        }
+    </style>
+</head>
+
+<body>
+<div id="ZoomEmbeddedApp"></div>
+<div id="ZoomChat"></div>
+<button id="teststuff" style="position: fixed; bottom: 15px; left: 15px;">Test Something</button>
+</body>
+</html>
